@@ -1,0 +1,75 @@
+
+<!-- ----- début fragmentMenu -->
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="router.php?action=Accueil">KEMPLAIRE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Gestion des vaccins <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router.php?action=vaccinReadAll">Liste des vaccins</a></li>
+          <li><a href="router.php?action=vaccinCreate">Ajout d'un vaccin</a></li>
+          <li><a href="router.php?action=vaccinReadId&target=vaccinModify">Mise à jour d'un vaccin</a></li>
+        </ul>
+      </li>   
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Gestion des centres <span class="caret"></span></a>
+        <ul class="dropdown-menu">            
+          <li><a href="router.php?action=centreCreate">Ajout d'un centre</a></li>
+          <li><a href="router.php?action=centreReadAll">Liste des centres</a></li> 
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Gestion des patients <span class="caret"></span></a>
+        <ul class="dropdown-menu">            
+          <li><a href="router.php?action=patientCreate">Ajout d'un patient</a></li>
+          <li><a href="router.php?action=patientReadAll">Liste des patients</a></li> 
+        </ul>
+      </li>  
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Gestion des stocks <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="router.php?action=stockReadAll&target=listeCentresDoses">Liste des centres avec le nombre de doses de chaque vaccin</a></li>
+            <li><a href="router.php?action=stockReadAll&target=nombreGlobalDosesParCentre">Nombre global de doses des centres</a></li>
+            <li><a href="router.php?action=stockCreate">Attribution de vaccins pour un centre</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Gestion des rendez-vous <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="router.php?action=patientReadId&target=readSituationVaccinale">Dossier de vaccination d'un patient</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Mes innovations <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="router.php?action=classementCentreParNbInjections">Classement des centres par nombre d'injections / Liste des rendez-vous pour chaque centre</a></li>
+            <li><a href="router.php?action=statistiquesVaccin">Statistiques sur les vaccins</a></li>
+            <li><a href="router.php?action=patientReadId&target=profilPatient">Profil d'un patient</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">Documentation <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="router.php?action=AvisProjet">Avis sur le projet</a></li>
+            <li><a href="router.php?action=DoccumentationInnovation1">Documentation Innovation 1</a></li>
+            <li><a href="router.php?action=DoccumentationInnovation2">Documentation Innovation 2</a></li>
+            <li><a href="router.php?action=DoccumentationInnovation3">Documentation Innovation 3</a></li> 
+        </ul>
+      </li> 
+    </ul>
+  </div>
+</nav>
+
+<!-- ----- fin fragmentMenu -->
+
